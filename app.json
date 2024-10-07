@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.billy93.uber"
     },
     "web": {
       "bundler": "metro",
@@ -30,12 +31,20 @@
       [
         "expo-router",
         {
-          "origin": "https://uber.dev/"
+          "origin": "https://expo-web-api-uber.vercel.app"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://expo-web-api-uber.vercel.app"
+      },
+      "eas": {
+        "projectId": "dcbba772-7afe-4c20-85e2-1f26f1ec9076"
+      }
     }
   }
 }
